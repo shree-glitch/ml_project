@@ -1,5 +1,5 @@
 import sys
-from logger import logging
+from src.logger import logging
 
 def error_msg_details(error, error_detail:sys):
     #The exc_info gives line no. type of error and all details from sys library
