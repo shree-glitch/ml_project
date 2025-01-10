@@ -36,10 +36,10 @@ def predict_datapoint():
 
         predict_pipeline=PredictPipeline()
         print("Mid Prediction")
-        results=predict_pipeline.predict(pred_df)
+        results=predict_pipeline.predict(pred_df).round(2)
         print("after Prediction")
         return render_template('home.html',results=results[0])
     
 
 if __name__=="__main__":
-    app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0", debug=True)
